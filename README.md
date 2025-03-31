@@ -39,11 +39,12 @@ HES/
 │   ├── styles/
 │   │   ├── App.css
 │   │   ├── Header.css
-│   │   └── LocationInput.css
-│   │   └── ResultCard.css
-│   │   └── ResultList.css
-│   │   └── SearchBar.css
-│   │   └── index.css
+│   │   ├── LocationInput.css
+│   │   ├── ResultCard.css
+│   │   ├── ResultList.css
+│   │   ├── SearchBar.css
+│   │   ├── index.css
+│   │   └── others(may add in future).css
 │   ├── App.js
 │   ├── firebase_integration.js
 │   └── index.js
