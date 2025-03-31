@@ -39,7 +39,11 @@ HES/
 │   ├── styles/
 │   │   ├── App.css
 │   │   ├── Header.css
-│   │   └── ... (other styles)
+│   │   └── LocationInput.css
+│   │   └── ResultCard.css
+│   │   └── ResultList.css
+│   │   └── SearchBar.css
+│   │   └── index.css
 │   ├── App.js
 │   ├── firebase_integration.js
 │   └── index.js
@@ -78,7 +82,7 @@ HES/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/HES.git
+   git clone https://github.com/2006coder/HES.git
    cd HES
    ```
 
@@ -86,13 +90,14 @@ HES/
    ```bash
    npm install
    ```
+3. Add new data to the json data file.
 
-3. Upload sample data to Firebase:
+4. Upload that data to Firebase:
    ```bash
    node upload-data.js
    ```
 
-4. Start the development server:
+5. Start the development server:
    ```bash
    npm start
    ```
