@@ -1,5 +1,11 @@
+/* 
+Update note: change fake place holder of "open now" into actual function to check the open state using "hours" from the database.
+We use the exported function from timeUtils.js in Utils folder to check if the facilities are open or not.
+Also we create a severity indicator and create a new script to sort the severity.
+*/
 import React from "react";
 import "../styles/ResultCard.css";
+import { isCurrentlyOpen } from "../utils/timeUtils.js";
 
 function ResultCard({ facility }) {
   const {
@@ -9,11 +15,22 @@ function ResultCard({ facility }) {
     specialties,
     rating,
     distance,
-    openNow
+    hours
   } = facility;
+
+  // Check if the facility is open now or not ;)
+  const openNow = isCurrentlyOpen(hours);
 
   return (
     <div className="result-card">
+      <div className={`severity-indicator severity-${facility.severity || 5}`}>
+        {facility.severity === 1 ? "Emergency" : 
+         facility.severity === 2 ? "Urgent" : 
+         facility.severity === 3 ? "Standard" : 
+         facility.severity === 4 ? "Routine" : 
+         "General"
+         }
+      </div>
       <div className="facility-header">
         <h3>{name}</h3>
         <div className="rating">
@@ -31,6 +48,22 @@ function ResultCard({ facility }) {
             <span className="open">Open Now</span>
           ) : (
             <span className="closed">Closed</span>
+          )}
+        </div>
+        <div className="hours-info">
+          {typeof hours === 'string' ? (
+            <p>{hours}</p>
+          ) : (
+            <details>
+              <summary>Hours</summary>
+              <ul className="hours-list">
+                {Object.entries(hours).map(([day, timeRange]) => (
+                  <li key={day}>
+                    <span className="day">{day}:</span> {timeRange}
+                  </li>
+                ))}
+              </ul>
+            </details>
           )}
         </div>
       </div>
