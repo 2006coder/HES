@@ -33,18 +33,22 @@ HES/
 │   │   ├── LocationInput.js
 │   │   ├── ResultCard.js
 │   │   ├── ResultsList.js
-│   │   └── SearchBar.js
+|   |   ├── SearchBar.js
+│   │   └── SortOptions.js
 │   ├── services/
 │   │   └── nlpService.js
 │   ├── styles/
 │   │   ├── App.css
 │   │   ├── Header.css
+|   |   ├── index.css
 │   │   ├── LocationInput.css
 │   │   ├── ResultCard.css
 │   │   ├── ResultList.css
 │   │   ├── SearchBar.css
-│   │   ├── index.css
+│   │   ├── SortOptions.css
 │   │   └── others(may add in future).css
+│   ├── utils/
+│   │   └── timeUtils.js
 │   ├── App.js
 │   ├── firebase_integration.js
 │   └── index.js
