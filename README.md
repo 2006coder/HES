@@ -33,14 +33,14 @@ HES/
 │   │   ├── LocationInput.js
 │   │   ├── ResultCard.js
 │   │   ├── ResultsList.js
-|   |   ├── SearchBar.js
+│   │   ├── SearchBar.js
 │   │   └── SortOptions.js
 │   ├── services/
 │   │   └── nlpService.js
 │   ├── styles/
 │   │   ├── App.css
 │   │   ├── Header.css
-|   |   ├── index.css
+│   │   ├── index.css
 │   │   ├── LocationInput.css
 │   │   ├── ResultCard.css
 │   │   ├── ResultList.css
@@ -167,6 +167,15 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Group members
+
+- Bach Pham
+- Sora Owada
+- Arata Michael Katayama
+- Saki Takizawa
+- Noah
+
 
 ---
 
