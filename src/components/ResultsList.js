@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ResultCard from "./ResultCard";
 import SortOptions from "./SortOptions";
 import "../styles/ResultsList.css";
