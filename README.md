@@ -153,7 +153,15 @@ You can customize the medical facilities in your database by editing the `facili
       "phoneNumber": "Phone number",
       "specialties": ["specialty1", "specialty2"],
       "rating": 4.5,
-      "openNow": true,
+      "Hours" {
+        "Monday": "8am - 8pm",
+        "Tuesday": "8am - 8pm",
+        "Wednesday": "8am - 8pm",
+        "Thursday": "8am - 8pm",
+        "Friday": "8am - 8pm",
+        "Saturday": "Closed",
+        "Sunday": "Closed"
+      }
       ...
     }
   ]
