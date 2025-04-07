@@ -52,7 +52,7 @@ function ResultsList({ results }) {
       />
     
       <div className="results-grid">
-        {results.map(facility => (
+        {sortedResults.map(facility => (
           <ResultCard key={facility.id} facility={facility} />
         ))}
       </div>
