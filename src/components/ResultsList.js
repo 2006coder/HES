@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ResultCard from "./ResultCard";
 import SortOptions from "./SortOptions";
 import "../styles/ResultsList.css";
@@ -52,7 +52,7 @@ function ResultsList({ results }) {
       />
     
       <div className="results-grid">
-        {results.map(facility => (
+        {sortedResults.map(facility => (
           <ResultCard key={facility.id} facility={facility} />
         ))}
       </div>

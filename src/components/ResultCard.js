@@ -57,9 +57,9 @@ function ResultCard({ facility }) {
             <details>
               <summary>Hours</summary>
               <ul className="hours-list">
-                {Object.entries(hours).map(([day, timeRange]) => (
+                {['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'].map(day => (
                   <li key={day}>
-                    <span className="day">{day}:</span> {timeRange}
+                    <span className="day">{day}:</span> {hours[day] || 'Closed'}
                   </li>
                 ))}
               </ul>
