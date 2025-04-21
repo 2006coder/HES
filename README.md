@@ -6,6 +6,10 @@
 
 A modern web application that helps users find the right medical facilities based on their symptoms and location. 
 
+# Notification: A super big update in code will be released soon. 
+
+- I am working hard in merging current back end with a different front end made by other members of the team.
+
 ## ✨ Features
 
 - 🔍 Search for medical facilities using natural language descriptions of symptoms
