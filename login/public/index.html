@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="src/style/style.css" />
+  <title>Hospital Search Engine</title>
+</head>
+
+<body>
+  <div class="login-container" id="login-section">
+    <h2>Log In</h2>
+    <div class="form-group">
+      <input type="email" id="email" placeholder="Enter Your Email" required />
+      <input type="password" id="password" placeholder="Enter Your Password" required />
+      <button id="email-login-btn">Log In</button>
+      <div class="option-container">
+        <a href="#" id="reset-password">Reset Password</a>
+        <a href="./signup.html" id="no-account">Don't have an account?</a>
+      </div>
+    </div>
+
+    <div class="divider"><span>or</span></div>
+
+    <div class="google-btn-container">
+      <button class="google-btn" id="login-btn">
+        <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google logo">
+        Log in with Google
+      </button>
+    </div>
+
+    <p id="user-info"></p>
+  </div>
+  <script type="module" src="src/login.js"></script>
+</body>
+</html>
