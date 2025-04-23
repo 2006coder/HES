@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import MainSection from './components/MainSection/MainSection';
 import ServiceSection from './components/ServiceSection/ServiceSection';
@@ -29,7 +29,7 @@ const HomePage = () => (
 const App = () => {
   return (
     <AuthProvider>
-      <Router>
+      <HashRouter>
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -69,7 +69,7 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
         </Routes>
-      </Router>
+      </HashRouter>
     </AuthProvider>
   );
 };
