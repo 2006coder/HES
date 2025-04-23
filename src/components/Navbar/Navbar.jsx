@@ -83,6 +83,9 @@ const Navbar = () => {
             <li className="nav-item">
               <a href="/#faq" onClick={handleLinkClick}>FAQ</a>
             </li>
+            <li className="nav-item">
+              <Link to="/healthcare-search" onClick={handleLinkClick}>Healthcare Search</Link>
+            </li>
             <li className="nav-item sign-in">
               {isAuthenticated ? (
                 <button className="login-button" onClick={handleLogout}>Logout</button>
