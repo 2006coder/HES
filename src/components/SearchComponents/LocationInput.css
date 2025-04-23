@@ -1,0 +1,172 @@
+.location-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+}
+
+.current-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: #4a5568;
+}
+
+.change-location-btn {
+  background: transparent;
+  border: none;
+  color: #4299e1;
+  margin-left: 0.75rem;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.change-location-btn:hover {
+  color: #2b6cb0;
+}
+
+.location-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location-input-group {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 0.75rem;
+}
+
+.location-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.location-submit-btn {
+  background: #718096;
+  color: white;
+  border: none;
+  padding: 0 1rem;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+/* Match the search container style */
+.location-search-container {
+  margin-bottom: 0.5rem;
+}
+
+/* Match the glass effect from SearchBar but without animation */
+.glass-effect {
+  display: flex;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 0.5rem;
+  box-shadow: 
+    0 4px 6px rgba(31, 41, 55, 0.04),
+    0 12px 16px rgba(31, 41, 55, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  transition: box-shadow 0.3s ease; /* Keep shadow transition but remove transform */
+  align-items: center;
+}
+
+.glass-effect:hover, .glass-effect:focus-within {
+  box-shadow: 
+    0 6px 12px rgba(31, 41, 55, 0.06),
+    0 15px 20px rgba(31, 41, 55, 0.05);
+  /* Removed: transform: translateY(-2px); */
+}
+
+/* Location icon styling */
+.location-icon {
+  font-size: 20px;
+  color: #4299e1;
+  margin: 0 10px 0 10px;
+}
+
+/* Match the search input */
+.search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 1rem;
+  font-size: 1.1rem;
+  outline: none;
+  color: #1a202c;
+}
+
+.search-input::placeholder {
+  color: #a0aec0;
+}
+
+/* Match the search button */
+.search-button {
+  background: #4299e1;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.search-button:hover {
+  background: #3182ce;
+}
+
+/* Style the location options area */
+.location-options {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.75rem;
+}
+
+/* Style for the 'Use Current Location' button */
+.current-location-btn {
+  background: transparent;
+  border: none;
+  color: #4299e1;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.2s;
+}
+
+.current-location-btn:hover {
+  color: #2b6cb0;
+}
+
+/* Style for when using current location - simplified to just text */
+.current-location-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  color: #4a5568;
+  font-weight: 500;
+  /* Removed background, border, and box-shadow */
+}
+
+/* Error message styling */
+.location-error {
+  background-color: rgba(254, 215, 215, 0.7);
+  border-left: 4px solid #e53e3e;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  color: #c53030;
+  font-size: 0.9rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,64 @@
+.team-section {
+  padding: 120px 20px 60px;
+  text-align: center;
+
+}
+
+.team-section h2 {
+  font-size: 55px;
+  font-weight: 800;
+  margin-top: -30px;
+  margin-bottom: -10px;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(3, 250px); /* Three columns, each 250px wide */
+  gap: 20px; /* Applies 20px gap both horizontally and vertically */
+  justify-content: center; /* Centers the grid within the container */
+  padding: 20px; /* Optional: adds 20px space around the entire grid */
+}
+
+/* Individual team member card */
+.team-member {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  /* Removed fixed width to let the card fill the grid cell */
+  padding: 20px; /* Same padding for all cards */
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s; /* For hover animation */
+}
+
+/* Hover effect: scale and shadow */
+.team-member:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Circular images */
+.team-member img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  font-size: 23px;
+  margin-bottom: -5px;
+}
+/* Title and bio styling (optional) */
+.title {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 5px 0 5px;
+  color: #555;
+}
+
+.bio {
+  font-style: italic;
+  color: #000000;
+  font-weight: 250;
+}

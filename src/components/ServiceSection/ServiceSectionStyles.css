@@ -1,0 +1,69 @@
+.services-section {
+  box-sizing: border-box;
+  height: auto;
+  padding: 120px 20px 60px;
+  text-align: center;
+  background-color: rgba(42, 149, 191, 0.4);
+  align-items: center;
+}
+
+.services-section h2 {
+  font-size: 55px;
+  margin-top: -50px;
+  padding-bottom: 10px;
+
+}
+  
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 横に2枚 */
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+  
+  .service-card {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 40px;
+
+    border-radius: 18px;
+    transition: transform 0.3s; box-shadow: 0.3s;
+    color: black;
+    font-size: 20px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
+  }
+  
+  .service-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .service-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    display: block;
+  }
+  
+  .service-card .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #636161;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+
+.btn-locked {
+  background-color: #a0aec0 !important;
+  cursor: pointer;
+  position: relative;
+}
+
+.btn-locked::before {
+  content: "🔒";
+  margin-right: 5px;
+}

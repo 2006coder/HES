@@ -1,0 +1,28 @@
+{
+      "name": "Reid Health Ortho Walk-in",
+      "type": "urgent care",
+      "address": "1400 Highland Road Suite 1, Richmond, IN 47374",
+      "phoneNumber": "765-962-4444",
+      "hours": {
+        "Monday": "8am - 8pm",
+        "Tuesday": "8am - 8pm",
+        "Wednesday": "8am - 8pm",
+        "Thursday": "8am - 8pm",
+        "Friday": "8am - 8pm",
+        "Saturday": "Closed",
+        "Sunday": "Closed"
+      },
+      "appointmentStyle": "Walk-in",
+      "price": "$$",
+      "specialties": [
+        "orthopedics",
+        "emergency",
+        "physical therapy",
+        "sports medicine",
+        "neurology",
+        "xray"
+      ],
+      "rating": 4.4,
+      "openNow": true,
+      "severity": 4
+    }

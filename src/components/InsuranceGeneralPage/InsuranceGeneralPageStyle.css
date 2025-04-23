@@ -1,0 +1,107 @@
+html {
+    line-height: 1.25;
+  }
+
+  .section-number{
+    padding: 30px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 650px;
+    table-layout: fixed;
+    color: #001F3F;
+  }
+  
+  table tr {
+    padding: .35em;
+    border-bottom: 1px dotted #001F3F;
+  }
+  table tr:last-child{
+     border-bottom: 2px solid #001F3F;
+  }
+  table th,
+  table td {
+    padding: 1em 10px 1em 1em;
+  }
+  tbody th {
+      color: #2A95BF;
+  }
+  .txt{
+     text-align: left;
+     font-size: .85em;
+  }
+  .price{
+     text-align: right;
+  }
+
+@media (max-width: 992px) {
+  .main-part {
+    padding: 120px 60px 60px;
+  }
+  
+  table {
+    width: 100%;
+    max-width: 650px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-part {
+    padding: 100px 30px 40px;
+  }
+  
+  table {
+    font-size: 0.9rem;
+  }
+  
+  table th, table td {
+    padding: 0.75em 5px 0.75em 0.5em;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-part {
+    padding: 80px 15px 30px;
+  }
+  
+  /* Make tables responsive by turning them into cards */
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  tr {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+  }
+  
+  td:before {
+    position: absolute;
+    left: 6px;
+    width: 45%;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+  
+  /* Add data attribute based labels for the insurance tables */
+  td:nth-of-type(1):before { content: "Detail"; }
+  td:nth-of-type(2):before { content: "In-Network"; }
+  td:nth-of-type(3):before { content: "Out-of-Network"; }
+  td:nth-of-type(4):before { content: "Example"; }
+}

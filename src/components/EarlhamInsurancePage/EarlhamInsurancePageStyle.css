@@ -1,0 +1,56 @@
+html{
+    line-height: 2;
+}
+
+.main-part{
+    padding: 140px 100px 100px; 
+    position: relative;
+}
+
+.main-part h1{
+    font-size: 35px;
+    color: #001F3F;
+    /* text-shadow: 2px 2px 1px #F2C14E; */
+}
+
+.get-insurance-id{
+    background-color: white;
+    padding: 40px;
+    width: auto;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.get-insurance-id h2{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.get-insurance-id h3{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.get-insurance-id h3 span{
+    font-weight: 500;
+}
+
+.how-to-use-student-insurance{
+    padding: 40px 0px;
+}
+
+.referral{
+    padding:40px 0px;
+}
+
+.plan-benefit-table, .where-to-go-table{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+ 
+.not-covered-service h2{
+    font-size: 22px;
+    font-weight: 700;
+}

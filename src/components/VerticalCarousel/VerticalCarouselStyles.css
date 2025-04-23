@@ -1,0 +1,45 @@
+.vertical-carousel {
+  width: 250px;
+  height: 780px; /* 3 slides visible: (3*250) + (2*15) = 750 + 30 = 780px */
+  overflow: hidden;
+  background-color: transparent; /* Let underlying background show in gaps */
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* 15px gap between slides */
+  /* Animate upward continuously */
+  animation: scrollUp 60s linear infinite;
+}
+
+.carousel-slide {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: rgb(175, 180, 182, 0.8);
+  box-sizing: border-box;
+}
+
+/* Keyframe animation: move upward 1060px (4 * 265px) over 20 seconds */
+@keyframes scrollUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-1060px);
+  }
+  }
+
+  @media (max-width: 768px){
+    .vertical-carousel{
+      display: none;
+    }
+
+    
+  }

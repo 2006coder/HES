@@ -1,0 +1,201 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.main-part {
+  margin-left: 150px;    
+  padding: 140px 0 40px 0; /* 上にナビバー分の余白を追加（例として140px） */
+  width: calc(100vw - 150px); /* サイドバーの200pxを除いた幅にする */
+  box-sizing: border-box;
+  background-color: #E6F0F8;
+}
+
+.side-menu-bar{
+  position: fixed;
+  left: 0px;
+  top: 97.2px;
+  background-color: #001F3F ;
+  width: 150px;
+  height: 100vh;
+}
+
+.side-menu-bar h1{
+  font-size: 22px;
+  font-weight: 300;
+  padding-top: 40px;
+  color: #F2C14E;
+  padding-left: 20px;
+  text-align: left;
+  font-weight: 700;
+}
+
+.side-menu-bar ul{
+  list-style: none;
+  padding: 0px;
+  justify-content: center;
+}
+
+.side-menu-item a.btn {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  width: 130px; 
+  text-align: left; 
+  transition: background-color 0.3s, color 0.3s;
+  padding: 20px 0px;
+  padding-left: 20px;
+  border-top: solid 1px #F2C14E;
+}
+
+.side-menu-item-last a.btn {
+border-bottom: solid 1px #F2C14E;
+}
+
+.side-menu-item a.btn:hover {
+  color: black;
+  font-weight: 400;
+  background-color: #F2C14E;
+}
+
+
+.three-menu{
+  list-style: none;
+}
+
+
+.three-caregory-menu {
+  display: flex;
+  justify-content: center; 
+}
+
+.three-menu {
+  display: flex;
+  justify-content: center; 
+  gap: 30px;
+  padding: 0;
+}
+
+.three-menu a.btn{
+  background-color: #2a95bf;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 2px 2px 4px #001F3F;
+}
+
+.three-menu a.btn:hover{
+  color: black;
+}
+
+.divide-line{
+  margin-top:25px;
+  margin-bottom: 20px;
+  width: 90%;
+  height: 2px;
+  background-color: grey;
+}
+
+.main-part h1{
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.urgent, .non-urgent, .life-threatening {
+  margin: 70px 100px 70px;
+  padding: 20px 50px 40px; 
+  font-size: 16px;
+  scroll-margin-top: 140px;
+  background-color: white;
+  border-radius: 15px; 
+}
+
+.urgent h1, .non-urgent h1, .life-threatening h1{
+  font-size: 33px;
+}
+
+.urgent h2, .non-urgent h2, .life-threatening h2{
+  text-decoration: underline;
+  font-weight: 500;
+  color: #001F3F;
+}
+
+.body-part ul{
+  list-style-type: circle;
+}
+
+.non-urgent-reminder p, .life-threatening-important p, .urgent-important p{
+  font-size: 20px;
+  font-weight: 300;
+  color: #9C3D3D;
+}
+
+.non-urgent-reminder span {
+  font-weight: 500;
+}
+
+.life-threatening-important p{
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  /* サイドメニューを非表示に */
+  .side-menu-bar {
+    display: none;
+  }
+
+  /* メインコンテンツを全幅に調整 */
+  .main-part {
+    width: 100vw;
+    margin: 0;
+    padding: 0 !important;
+    margin-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  /* カテゴリーメニュー縦並びに変更 */
+  .three-caregory-menu {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .three-menu {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .three-menu a.btn {
+    font-size: 16px;
+    padding: 12px 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* セクションカードもモバイル幅に合わせて調整 */
+  .urgent, .non-urgent, .life-threatening {
+    margin: 40px 10px;
+    padding: 20px 16px;
+    font-size: 15px;
+  }
+
+  .urgent h1, .non-urgent h1, .life-threatening h1 {
+    font-size: 24px;
+  }
+
+  .urgent h2, .non-urgent h2, .life-threatening h2 {
+    font-size: 18px;
+  }
+
+  .non-urgent-reminder p, .life-threatening-important p, .urgent-important p {
+    font-size: 16px;
+  }
+
+  .divide-line {
+    width: 95%;
+  }
+
+}
+

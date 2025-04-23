@@ -1,0 +1,71 @@
+.mission-section {
+  box-sizing: border-box;
+  height: auto;
+  padding: 120px 20px 60px; /* Keep existing padding */
+  text-align: center;       /* Centers only the "Our Mission" heading */
+  background-color: rgba(128, 128, 128, 0.25);
+}
+
+.mission-section h2 {
+  font-size: 55px;
+  margin-top: -10px;
+  font-weight: 800;
+  padding-bottom: 20px;
+}
+
+/* Container for two columns */
+.mission-container {
+  display: flex;
+  gap: 20px;         /* Space between text & image */
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+
+/* Left column: text */
+.mission-text {
+  width: 50%;        /* Equal width for text and image columns */
+  text-align: left;  /* Left-align mission text */
+  padding: 0 40px;   /* Equal horizontal padding on left/right */
+  font-size: 20px;
+}
+
+/* Right column: image */
+.mission-image {
+  width: 50%;        /* Equal width for text and image columns */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;   /* Equal horizontal padding on left/right */
+}
+
+
+.mission-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Responsive: stack columns on narrow screens */
+@media (max-width: 768px) {
+
+  .mission-container {
+    flex-direction: column;
+  }
+  .mission-text,
+  .mission-image {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .mission-text{
+    font-size: 30px;
+  }
+
+  .mission-image img{
+    width: 80%;
+    height: auto;
+  }
+}
