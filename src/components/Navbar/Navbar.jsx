@@ -72,19 +72,16 @@ const Navbar = () => {
         <nav className={`nav-menu ${menuOpen ? 'active' : ''}`}>
           <ul className="nav-list">
             <li className="nav-item">
-              <a href="/#services" onClick={handleLinkClick}>Services</a>
+              <a href="/#/services" onClick={handleLinkClick}>Services</a>
             </li>
             <li className="nav-item">
-              <a href="/#mission" onClick={handleLinkClick}>Mission</a>
+              <a href="/#/mission" onClick={handleLinkClick}>Mission</a>
             </li>
             <li className="nav-item">
-              <a href="/#team" onClick={handleLinkClick}>Team</a>
+              <a href="/#/team" onClick={handleLinkClick}>Team</a>
             </li>
             <li className="nav-item">
-              <a href="/#faq" onClick={handleLinkClick}>FAQ</a>
-            </li>
-            <li className="nav-item">
-              <Link to="/healthcare-search" onClick={handleLinkClick}>Healthcare Search</Link>
+              <a href="/#/faq" onClick={handleLinkClick}>FAQ</a>
             </li>
             <li className="nav-item sign-in">
               {isAuthenticated ? (
