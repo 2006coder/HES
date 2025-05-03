@@ -1,0 +1,196 @@
+.result-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 2px 8px rgba(31,41,55,0.07);
+  border: 1px solid #e2e8f0;
+  position: relative;
+  font-size: 1rem;
+}
+
+.result-card:hover {
+  box-shadow: 0 4px 16px rgba(31,41,55,0.12);
+}
+
+.facility-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.facility-header h3 {
+  font-size: 1.1rem;
+  color: #2d3748;
+  margin: 0 0 0.5rem 0;
+}
+
+.rating-block {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.stars {
+  color: #f6ad55;
+}
+
+.rating-value {
+  color: #718096;
+  font-weight: 600;
+}
+
+.address-details {
+  margin-bottom: 0.5rem;
+}
+
+.address-summary {
+  cursor: pointer;
+  color: #4299e1;
+  font-weight: 500;
+  outline: none;
+}
+
+.address-content {
+  padding: 0.25rem 0 0.25rem 0.5rem;
+  color: #4a5568;
+}
+
+.phone, .distance {
+  margin-bottom: 0.5rem;
+}
+
+.status {
+  margin-top: 0.5rem;
+}
+
+.open {
+  color: #48bb78;
+  font-weight: 500;
+}
+
+.closed {
+  color: #e53e3e;
+  font-weight: 500;
+}
+
+.specialties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.specialty-tag {
+  background: #ebf8ff;
+  color: #3182ce;
+  padding: 0.2em 0.7em;
+  border-radius: 9999px;
+  font-size: 0.8em;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.directions-btn, .call-btn {
+  flex: 1;
+  padding: 0.6em 0;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  background: #edf2f7;
+  color: #2d3748;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.directions-btn {
+  background: #4299e1;
+  color: #fff;
+}
+
+.directions-btn:hover {
+  background: #3182ce;
+}
+
+.call-btn:hover {
+  background: #e2e8f0;
+}
+
+.hours-info {
+  margin-top: 0.75rem;
+}
+
+.hours-list {
+  list-style: none;
+  padding-left: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.95em;
+}
+
+.hours-list li {
+  margin-bottom: 0.25rem;
+}
+
+.day {
+  font-weight: 500;
+  display: inline-block;
+  width: 5rem;
+}
+
+details summary {
+  cursor: pointer;
+  color: #4299e1;
+  font-size: 0.95em;
+}
+
+details summary:hover {
+  text-decoration: underline;
+}
+
+.severity-indicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.4em 1em;
+  border-radius: 0 12px 0 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  background: #e53e3e;
+  z-index: 1;
+  min-width: 80px;
+  text-align: center;
+}
+
+.severity-1 {
+  background: #e53e3e;
+}
+
+.severity-2 {
+  background: #ed8936;
+}
+
+.severity-3 {
+  background: #ecc94b;
+  color: #333;
+}
+
+.severity-4 {
+  background: #48bb78;
+}
+
+.severity-5 {
+  background: #38b2ac;
+}
+
+.no-distance {
+  color: #a0aec0;
+  font-style: italic;
+}

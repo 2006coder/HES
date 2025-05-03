@@ -1,0 +1,180 @@
+/* Outer container spans the full viewport */
+.search-engine-page {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(42, 149, 191, 0.4);
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+/* Use client's app container styles */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Main container for page content */
+.search-page {
+  width: 100%;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+/* Page title styling */
+.page-title {
+  font-size: 55px;
+  margin-top: 100px; /* Increased to account for shorter navbar */
+  margin-bottom: 40px;
+  color:black;
+  font-weight: 900;
+}
+
+@media (max-width: 700px) {
+  .page-title {
+    margin-top: 70px; /* More space for mobile navbar */
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+/* Search buttons styling */
+.search-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.search-buttons button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.search-buttons button:hover {
+  background-color: #555;
+  color: white;
+}
+
+/* Search tab container: limited width and centered */
+.search-tab {
+  margin: 20px auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  text-align: left;
+}
+
+/* Search description text styling */
+.search-description {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2d3748;
+}
+
+/* Search bar styling */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.search-icon {
+  font-size: 25px;
+  color: #888;
+  margin-right: 10px;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: transparent;
+  color: #000000;
+}
+
+.search-button {
+  background: #2A95BF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.search-button:hover {
+  background: #1d7a9e;
+}
+
+/* Search section styling */
+.search-section {
+  margin-bottom: 3rem;
+}
+
+/* Error message styling */
+.error-message {
+  background-color: rgba(254, 215, 215, 0.7);
+  border-left: 4px solid #e53e3e;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  color: #c53030;
+}
+
+/* Loading indicator */
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: #718096;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(66, 153, 225, 0.2);
+  border-radius: 50%;
+  border-top-color: #4299e1;
+  animation: spin 1s ease-in-out infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hospital list link positioned at bottom right */
+.hospital-link {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.hospital-link a {
+  font-size: 14px;
+  text-decoration: underline;
+  color: blue;
+}
